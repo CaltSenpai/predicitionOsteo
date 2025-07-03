@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OsteoAI - Osteoarthritis Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <h1>🦴 OsteoAI</h1>
+            <ul>
+                <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
+                <li><a href="{{ url_for('predict_page') }}">Prediction</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Understanding Osteoarthritis</h1>
+            <p>Learn about this common joint condition and how AI can help with early detection</p>
+        </section>
+
+        <section class="content">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🔍 What is Osteoarthritis?</h3>
+                    <p>Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of bones wears down over time, leading to pain, stiffness, and reduced mobility.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>⚠️ Common Symptoms</h3>
+                    <ul>
+                        <li>Joint pain and stiffness, especially in the morning</li>
+                        <li>Reduced range of motion and flexibility</li>
+                        <li>Swelling and tenderness around joints</li>
+                        <li>Bone spurs around affected joints</li>
+                        <li>Grinding sensation during movement</li>
+                        <li>Joint instability and weakness</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎯 Risk Factors</h3>
+                    <ul>
+                        <li>Age (risk increases significantly after 50)</li>
+                        <li>Obesity and excess weight</li>
+                        <li>Previous joint injuries or trauma</li>
+                        <li>Repetitive stress on joints from work/sports</li>
+                        <li>Genetic predisposition and family history</li>
+                        <li>Bone deformities or joint malformation</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🤖 AI-Assisted Diagnosis</h3>
+                    <p>Our advanced AI model analyzes medical images (X-rays, MRIs) to help identify early signs of osteoarthritis. This technology provides healthcare professionals with additional diagnostic support for timely detection and treatment planning.</p>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <h2>📊 Osteoarthritis by the Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">32.5M</span>
+                        <span class="stat-label">Adults in the US with OA</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">80%</span>
+                        <span class="stat-label">People over 55 affected</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">Cause of disability worldwide</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h2>Ready to Get Started?</h2>
+                <p>Upload a medical image to get an AI-powered assessment for osteoarthritis detection</p>
+                <a href="{{ url_for('predict_page') }}" class="cta-button">🔬 Try Prediction Tool</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 OsteoAI. This tool is for educational and research purposes only and should not replace professional medical advice.</p>
+    </footer>
+</body>
+</html>
