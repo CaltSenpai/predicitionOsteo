@@ -35,10 +35,6 @@ def preprocess_image(image):
     return image_array
 
 @app.route('/')
-def home():
-    return render_template('home.html')
-
-@app.route('/predict')
 def predict_page():
     return render_template('predict.html')
 

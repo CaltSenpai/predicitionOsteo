@@ -10,10 +10,6 @@
     <nav>
         <div class="nav-container">
             <h1>🦴 OsteoAI</h1>
-            <ul>
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li><a href="{{ url_for('predict_page') }}" class="active">Prediction</a></li>
-            </ul>
         </div>
     </nav>
 
@@ -28,8 +24,9 @@
                         <input type="file" id="imageInput" name="image" accept="image/*" required>
                         <label for="imageInput" class="file-input-label">
                             <div class="upload-icon">📁</div>
-                            <span>Choose Medical Image</span>
-                            <small>Supported formats: JPG, PNG, JPEG (Max 16MB)</small>
+                            <span>Choose a medical image to upload</span>
+                            <small>JPG, PNG, JPEG &middot; Max 16MB</small>
+                            <div class="upload-instruction">Click or drag and drop your image here</div>
                         </label>
                     </div>
                     
